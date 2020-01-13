@@ -6,10 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Sangsoo Nam | Unlimited Power
+title: tech report 
 description: >
-  I'm a tech lead who likes learning, discussing, and solving interesting problems.
-  These days, I'm focusing on Android development at Spotify
+  Welcome to tech report
 baseurl: "" # the subpath of your site, e.g. /blog
 future: false
 
