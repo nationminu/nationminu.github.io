@@ -57,4 +57,6 @@ services:
         - ./result/:/app/result
       working_dir: /app
       command: "windup --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode"
+      
+# docker-compose up --build      
 ```
