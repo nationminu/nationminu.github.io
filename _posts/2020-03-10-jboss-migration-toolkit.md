@@ -23,12 +23,12 @@ CMD ["windup"]
 ```
 
 #### Build Image for windup
-```
+```bash
 docker build -t windup:4 .
 ```
 
 #### Make a Bash Script Executable (windup.sh)
-```
+```bash
 #!/usr/bin/env bash
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
 
