@@ -36,6 +36,8 @@ docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it wi
 # windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
 ```
 
+#### Make a Yaml for docker-compose 
+
 ```yaml
 version: '3'
 
