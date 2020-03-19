@@ -35,3 +35,18 @@ docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it wi
 # execute docker for windup
 # windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
 ```
+
+```yaml
+version: '3'
+
+services:
+  windup:
+      build: ./windup/ 
+      environment:
+        - TZ= "Asia/Seoul" 
+      volumes:
+        - ./webapp/:/app/src
+        - ./result/:/app/result
+      working_dir: /app
+      command: "windup --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode"
+```
