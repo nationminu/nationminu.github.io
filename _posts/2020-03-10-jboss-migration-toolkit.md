@@ -6,7 +6,7 @@ title: "Windup Red Hat Application Migration Toolkit Dockerzie "
 #### Make a Dockerfile
 Dockerfile
 
-```
+```bash
 FROM openjdk:8-jdk
 
 ENV WINDUP_VERSION 4.3.0
