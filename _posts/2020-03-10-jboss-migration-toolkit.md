@@ -3,11 +3,11 @@ layout: post
 title: "Windup Red Hat Application Migration Toolkit Dockerzie "
 ---
 
-> RED HAT APPLICATION MIGRATION TOOLKIT 는 JBoss 마이그레이션 도구(커뮤니티 windup)
-> 애플리케이션을 분석하고 코드나 설정등에 대한 수정 내용을 HTML 형식의 보고서로 변환하여 보여준다.
-> Weblogic 에서 사용중인 WAR 어플리케이션을 RHAMT 로 변환하게되면 JBoss 로 변경할 부분에 대한 공수(Story Point)를 산정하여 리포팅한다. 
-> CLI 모드, Web Console, IDE Plugin 형태의 바이너리를 제공한다.
-> https://developers.redhat.com/products/rhamt/overview
+> RED HAT APPLICATION MIGRATION TOOLKIT 는 JBoss 마이그레이션 도구(커뮤니티 windup) \
+> 애플리케이션을 분석하고 코드나 설정등에 대한 수정 내용을 HTML 형식의 보고서로 변환하여 보여준다. \
+> Weblogic 에서 사용중인 WAR 어플리케이션을 RHAMT 로 변환하게되면 JBoss 로 변경할 부분에 대한 공수(Story Point)를 산정하여 리포팅한다. \
+> CLI 모드, Web Console, IDE Plugin 형태의 바이너리를 제공한다. \
+> https://developers.redhat.com/products/rhamt/overview \
 
 #### Make a Dockerfile
 * Dockerfile
