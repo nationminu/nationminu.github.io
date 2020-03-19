@@ -3,7 +3,7 @@ layout: post
 title: "Windup Red Hat Application Migration Toolkit Dockerzie "
 ---
 
-## Dockerfile
+#### Dockerfile
 ```
 FROM openjdk:8-jdk
 
@@ -22,12 +22,12 @@ ENV WINDUP_HOME /usr/share/windup
 CMD ["windup"]
 ```
 
-## Build Image for windup
+#### Build Image for windup
 ```
 docker build -t windup:4 .
 ```
 
-## Make a Bash Script Executable (windup.sh)
+#### Make a Bash Script Executable (windup.sh)
 ```
 #!/usr/bin/env bash
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
