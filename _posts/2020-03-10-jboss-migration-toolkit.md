@@ -30,5 +30,5 @@ docker build -t windup:4 .
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
 
 # execute docker for windup
-#windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
+# windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
 ```
