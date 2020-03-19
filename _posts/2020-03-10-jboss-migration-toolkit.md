@@ -3,7 +3,7 @@ layout: post
 title: "Red Hat Application Migration Toolkit - "
 ---
 
-``` dockerize step #1
+```
 FROM openjdk:8-jdk
 
 ENV WINDUP_VERSION 4.3.0
@@ -21,11 +21,11 @@ ENV WINDUP_HOME /usr/share/windup
 CMD ["windup"]
 ```
 
-``` dockerize step #2
+```
 docker build -t windup:4 .
 ```
 
-``` dockerize step #3
+```
 #!/usr/bin/env bash
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
 
