@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: tech report 
+title: footprints in the sand 
 description: >
-  Welcome to tech report
+  Welcome to my footprints
 baseurl: "" # the subpath of your site, e.g. /blog
 future: false
 
