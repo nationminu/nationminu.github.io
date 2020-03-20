@@ -12,7 +12,7 @@ title: "Windup Red Hat Application Migration Toolkit Dockerzie "
 #### Make a Dockerfile
 * Dockerfile
 
-```bash
+{% highlight shell %}
 FROM openjdk:8-jdk
 
 ENV WINDUP_VERSION 4.3.0
@@ -28,29 +28,30 @@ RUN cd /usr/share/ && unzip migrationtoolkit-rhamt-cli-${WINDUP_VERSION}-offline
 ENV WINDUP_HOME /usr/share/windup
 
 CMD ["windup"]
-```
+{% endhighlight %}
+
 
 #### Build Image for windup
 
-```bash
+{% highlight shell %}
 docker build -t windup:4 .
-```
+{% endhighlight %}
 
 #### Make a Bash Script Executable 
 * windup.sh 
 
-```bash
+{% highlight shell %}
 #!/usr/bin/env bash
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
 
 # execute docker for windup
 # windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
-```
+{% endhighlight %}
 
 ### Make a Yaml for docker-compose 
 * docker-compose.yaml
 
-```yaml
+{% highlight yaml %}
 ---
 version: '3'
 
@@ -65,5 +66,4 @@ services:
       working_dir: /app
       command: "windup --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode"
 ...
-# docker-compose up --build
-```
+# docker-compose up --build{% endhighlight %}
