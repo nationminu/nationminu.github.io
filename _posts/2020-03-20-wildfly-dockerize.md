@@ -3,18 +3,14 @@ layout: post
 title: "wildfly Web Application Server Dockerzie "
 ---
 
-> Wildfly 는 JBoss Enterpise Application Server 의 커뮤니티 버전이다.
-> 가볍고 유연하고 관리가 편리한 오픈소스 웹 어플리케이션 서버이다.
-> https://wildfly.org/ <BR>
-
-* **Unparalleled Speed** 
-* **Exceptionally Lightweight**
-* **Powerful Administration**
-* **Supports Latest Standards and Technology**
-* **Modular Java**
-* **Easily Testable**
-* **Based on the Best of Open Source**
-
+> 일드플라이(WildFly, 이전 이름: JBoss)는 자바를 기반으로 하는 오픈 소스 미들웨어의 총칭이다. 대표적으로 Java EE 스펙을 지원하는 제이보스 애플리케이션 서버가 있다. 현재 40개 이상의 다양한 프로젝트가 있으며, Jboss.org 커뮤니티에 의해 개발 및 운영되고 있다.
+> 
+> 제이보스는 각 프로젝트의 핵심 개발자를 Jboss Inc.의 직원으로 고용하고 있으므로 오픈 소스의 프로젝트이면서 직원으로 고용하면서 제품 개발을 계속하는 독특한 형태를 취하고 있다. Jboss Inc.는 소프트웨어를 프리 라이선스로 제공하면서 지원 서비스를 판매하여 수익을 올리고 있다.
+> 
+> 2006년에는 상용 리눅스 밴더인 레드햇에서 인수하여 제이보스 프로젝트를 운영하고 있다. 2007년부터는 레드햇은 각종 컴포넌트의 제공 및 보증 및 통합 품질 테스트를 완료한 제이보스 소프트웨어를 제이보스 엔터프라이즈 미들웨어로 제공하고 있다.
+> 
+> 2014년 11월 20일 레드햇은 기존 제이보스의 이름을 와일드플라이(WildFly)로 변경했다.
+> _[wikipedia](https://ko.wikipedia.org/wiki/%EC%99%80%EC%9D%BC%EB%93%9C%ED%94%8C%EB%9D%BC%EC%9D%B4)
 
 #### Make a Dockerfile
 * Dockerfile
