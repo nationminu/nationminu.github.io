@@ -10,7 +10,8 @@ title: "wildfly Web Application Server Dockerzie "
 > 2006년에는 상용 리눅스 밴더인 레드햇에서 인수하여 제이보스 프로젝트를 운영하고 있다. 2007년부터는 레드햇은 각종 컴포넌트의 제공 및 보증 및 통합 품질 테스트를 완료한 제이보스 소프트웨어를 제이보스 엔터프라이즈 미들웨어로 제공하고 있다.
 > 
 > 2014년 11월 20일 레드햇은 기존 제이보스의 이름을 와일드플라이(WildFly)로 변경했다.
-> _[wikipedia](https://ko.wikipedia.org/wiki/%EC%99%80%EC%9D%BC%EB%93%9C%ED%94%8C%EB%9D%BC%EC%9D%B4)
+>
+> [wikipedia](https://ko.wikipedia.org/wiki/%EC%99%80%EC%9D%BC%EB%93%9C%ED%94%8C%EB%9D%BC%EC%9D%B4)
 
 #### Make a Dockerfile
 * Dockerfile
