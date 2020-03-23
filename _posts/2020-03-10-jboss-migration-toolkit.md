@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Windup Red Hat Application Migration Toolkit Dockerize"
+categories: dockerize
 ---
 
 > RED HAT APPLICATION MIGRATION TOOLKIT(이하 RHAMT) 는 JBoss 마이그레이션 도구(커뮤니티 windup)로 application 분석을 보다 효율적으로 수행하기 위한 방법입니다.애플리케이션을 분석하고 코드나 설정등에 대한 수정 내용을 HTML 형식의 보고서로 변환하여 보여줍니다.
