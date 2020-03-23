@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Wildfly Web Application Server Dockerize"
+categories: [wildfly, dockerize]
+tags: [wildfly, dockerize]
 ---
 
 > 와일드플라이(WildFly, 이전 이름: JBoss)는 자바를 기반으로 하는 오픈 소스 미들웨어의 총칭이다. 대표적으로 Java EE 스펙을 지원하는 제이보스 애플리케이션 서버가 있다. 현재 40개 이상의 다양한 프로젝트가 있으며, Jboss.org 커뮤니티에 의해 개발 및 운영되고 있다.
