@@ -17,7 +17,7 @@ title: "Wildfly Web Application Server Dockerize"
 * Dockerfile
 
 {% highlight shell %}
-FROM openjdk:8
+FROM openjdk:8-jdk
 
 ENV WILDFLY_VERSION 18.0.1.Final
 
@@ -26,7 +26,7 @@ RUN curl -fsSL https://download.jboss.org/wildfly/${WILDFLY_VERSION}/wildfly-${W
 
 ENV WILDFLY_HOME /usr/share/wildfly
 
-ADD example.war ${WILDFLY_HOME}/standalone/deployments/
+ADD webapp/example.war ${WILDFLY_HOME}/standalone/deployments/
 ADD configuration/standalone-full-docker.xml /usr/share/wildfly/standalone/configuration/standalone-full-docker.xml
 ADD module.ext /usr/share/wildfly/module.ext
 ADD docker-entrypoint.sh /
@@ -67,15 +67,15 @@ version: '3'
 
 services:
   wildfly:
-    build: ./wildfly/
+    build: ./
     ports:
         - "8080:8080"
         - "8009:8009"
         - "8443:8443"
     environment:
         TZ: "Asia/Seoul"
-    volumes: 
-        - ${pwd}/wildfly/module.ext:/usr/share/wildfly/module.ext:rw 
+    volumes:
+        - ${pwd}/module.ext:/usr/share/wildfly/module.ext:rw
 ...
 # docker-compose up --build
 {% endhighlight %}
