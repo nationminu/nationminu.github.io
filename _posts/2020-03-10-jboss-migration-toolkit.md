@@ -46,7 +46,10 @@ docker build -t windup:4 .
 docker run -v "$PWD/webapp:/app/src" -v "$PWD/result:/app/result" -w /app -it windup:4 $@
 
 # execute docker for windup
-# windup.sh --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode
+# windup.sh --input /app/src/simple-sample-app.ear --output /app/result --source weblogic --target eap:7 --packages com.acme
+
+# simple app
+# wget https://github.com/windup/windup-sample-apps/raw/simple-sample-weblogic-logmanager/sample-apps/simple-sample/prebuilt/simple-sample-app.ear
 {% endhighlight %}
 
 ### Make a Yaml for docker-compose 
@@ -58,14 +61,14 @@ version: '3'
 
 services:
   windup:
-      build: ./windup/ 
+      build: ./
       environment:
-        - TZ= "Asia/Seoul" 
+        - TZ= "Asia/Seoul"
       volumes:
         - ./webapp/:/app/src
         - ./result/:/app/result
       working_dir: /app
-      command: "windup --input /app/src --output /app/result --source weblogic --target java-ee --sourceMode"
+      command: "windup --input /app/src/simple-sample-app.ear --output /app/result --source weblogic --target eap:7 --packages com.acme"
 ...
 # docker-compose up --build
 {% endhighlight %}
