@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wildfly Web Application Server Dockerize"
+title: "Wildfly Web Application Server"
 categories: dockerize
 ---
 
