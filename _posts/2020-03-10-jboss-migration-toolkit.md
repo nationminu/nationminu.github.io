@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windup Red Hat Application Migration Toolkit Dockerize"
+title: "Windup Red Hat Application Migration Toolkit"
 categories: dockerize
 ---
 
