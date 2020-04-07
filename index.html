@@ -8,7 +8,7 @@ layout: default
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
           <div>
-            <h1 class="post-title">{{ post.title }}</h1>
+            <h1 class="post-title">[{{ post.categories }}]{{ post.title }}</h1>
             <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
             <p class="post-summary">{{ post.content | strip_html | truncatewords:60 }}<p>
           </div>
