@@ -9,7 +9,6 @@ tmux(Terminal MUltipleXer)는 원격 터미널 세션 안에서 여러 터미널
 Tmux를 사용하면 한 터미널에서 여러 프로그램을 쉽게 전환하고 분리 한 후 다른 터미널에 다시 연결할 수 있다.
 연결된 세션이 끊어져도 실행중인 프로그램은 계속 실행된다.
 
-
 Installing Tmux on Ubuntu and Debian
 {% highlight bash %}
 sudo apt install tmux
@@ -47,8 +46,13 @@ tmux a -t 0
 * `Ctrl+b o`, Go to the next pane
 * `Ctrl+b ;`, Toggle between the current and previous pane 
 * `Ctrl+b x`, Close the current pane
-  
-[Installing] (https://github.com/tmux/tmux/wiki/Installing)
-[Getting-Started] (https://github.com/tmux/tmux/wiki/Getting-Started)
 
 
+**Documents:**
+
+Tmux 설치 : [Installing][tmux-install]  
+Tmux 문서 : [Getting-Started][tmux-getting-started] 
+
+
+[tmux-install]: https://github.com/tmux/tmux/wiki/Installing
+[tmux-getting-started]: https://github.com/tmux/tmux/wiki/Getting-Started
