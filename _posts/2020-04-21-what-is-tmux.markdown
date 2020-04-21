@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is tmux"
-date:   2013-02-19 21:28:15 +0700
+date:   2020-04-19 21:28:15 +0700
 categories: [others]
 ---
 tmux(Terminal MUltipleXer)는 원격 터미널 세션 안에서 여러 터미널 세션에 액세스할 수 있도록 하는 가상 콘솔을 소프트웨어이다. Tmux를 는 cli 환경에서 다수의 프로그램을 처리하고 유닉스 셸로부터 프로그램을 분리하는데 편리하게 사용할 수 있다.
