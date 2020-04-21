@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 3;
+    margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -82,7 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: #{$base-font-weight * 2};
+    font-weight: $base-font-weight;
 }
 
 
@@ -94,27 +94,28 @@ a {
     color: $brand-color;
     text-decoration: none;
 
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
     &:hover {
+        color: $text-color;
         text-decoration: underline;
     }
 }
 
-/**
- * Block
- */
- p {
-   line-height: 1.6;
- }
+
 
 /**
  * Blockquotes
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color;
+    border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    padding-top: $spacing-unit / 4;
-    padding-bottom: $spacing-unit / 4;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
@@ -129,10 +130,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    background-color: #272822;
-    color: #a9b7c6;
-    letter-spacing: -0.5px;
-    font-family: monospace;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
 }
 
 code {
@@ -140,16 +140,8 @@ code {
 }
 
 pre {
-    padding: 12px #{$spacing-unit + 2};
-    margin-left: -$spacing-unit;
-    margin-right: -$spacing-unit;
+    padding: 8px 12px;
     overflow-x: auto;
-
-    @include media-query($on-laptop) {
-      padding: 12px #{$spacing-unit / 2 + 2};
-        margin-right: -$spacing-unit / 2;
-        margin-left: -$spacing-unit / 2;
-    }
 
     > code {
         border: 0;
