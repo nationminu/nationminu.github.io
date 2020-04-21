@@ -48,7 +48,7 @@ tmux a -t 0
 * `Ctrl+b ;`, Toggle between the current and previous pane 
 * `Ctrl+b x`, Close the current pane
   
-[Installing]: https://github.com/tmux/tmux/wiki/Installing
-[Getting-Started]: https://github.com/tmux/tmux/wiki/Getting-Started
+[Installing] (https://github.com/tmux/tmux/wiki/Installing)
+[Getting-Started] (https://github.com/tmux/tmux/wiki/Getting-Started)
 
 
