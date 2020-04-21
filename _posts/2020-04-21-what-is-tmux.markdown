@@ -35,6 +35,11 @@ tmux attach-session -t 0
 tmux a -t 0
 {% endhighlight %}
 
+Kill Tmux sessions
+{% highlight bash %}
+tmux kill-session -t 0
+{% endhighlight %}
+
 **Example:**
 
 * `Ctrl+b c`, Create a new window (with shell) 
